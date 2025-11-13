@@ -2,7 +2,7 @@
 
 client_id = "7fa05eda4b1e26a886e5c98438c20507"
 name = "phuc128t-app-react1"
-application_url = "https://example.com"
+application_url = "https://phuc128t-app-react1.vercel.app"
 embedded = true
 
 [build]
@@ -25,4 +25,4 @@ api_version = "2026-01"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://phuc128t-app-react1.vercel.app/api/auth" ]
