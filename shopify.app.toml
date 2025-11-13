@@ -1,13 +1,12 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "7fa05eda4b1e26a886e5c98438c20507"
+client_id = "eb1effa410d688b8964cc5b6f2c31d6b"
 name = "phuc128t-app-react1"
 application_url = "https://phuc128t-app-react1.vercel.app"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-include_config_on_deploy = true
 
 [webhooks]
 api_version = "2026-01"
@@ -19,6 +18,10 @@ api_version = "2026-01"
   [[webhooks.subscriptions]]
   topics = [ "app/scopes_update" ]
   uri = "/webhooks/app/scopes_update"
+
+  [[webhooks.subscriptions]]
+  topics = [ "products/update" ]
+  uri = "/webhooks/product/update"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
